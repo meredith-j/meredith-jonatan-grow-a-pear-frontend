@@ -4,5 +4,25 @@
 @use '../../assets/styles/partials/mixins' as *;
 
 .header {
-    
+    padding: 1rem;
+
+    &__heading {
+        color: $dark-text;
+    }
+
+    &__logo {
+        height: 4.5rem;
+        position: absolute;
+        top: 2.5rem;
+        left: 4.5rem;
+        background-color: transparent;
+        z-index: 30;
+    }
+
+    &__profile-icon {
+        height: 2.3125rem;
+        position: absolute;
+        left: 85%;
+        top: 1.5rem;
+    }
 }
