@@ -1,4 +1,11 @@
+@use './assets/styles/partials/breakpoints' as *;
+@use './assets/styles/partials/colours' as *;
+@use './assets/styles/partials/fonts' as *;
+@use './assets/styles/partials/mixins' as *;
+
 * {
     box-sizing: border-box;
     margin: 0;
+    font-family: "Roboto Slab";
+    background-color: $main-background;
   }

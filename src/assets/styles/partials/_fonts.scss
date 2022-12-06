@@ -1,0 +1,72 @@
+@use './breakpoints' as *;
+@use './mixins' as *;
+@use './colours' as *;
+
+@font-face {
+    font-family: "Roboto Slab";
+    src: url(../../../assets/fonts/RobotoSlab-Regular.woff2) format("woff2");
+    src: url(../../../assets/fonts/RobotoSlab-Regular.woff) format("woff");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Roboto Slab";
+    src: url(../../../assets/fonts/RobotoSlab-SemiBold.woff2) format("woff2");
+    src: url(../../../assets/fonts/RobotoSlab-SemiBold.woff) format("woff");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Roboto Slab";
+    src: url(../../../assets/fonts/RobotoSlab-Light.woff2) format("woff2");
+    src: url(../../../assets/fonts/RobotoSlab-Light.woff) format("woff");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Roboto Slab";
+    src: url(../../../assets/fonts/RobotoSlab-ExtraLight.woff2) format("woff2");
+    src: url(../../../assets/fonts/RobotoSlab-ExtraLight.woff) format("woff");
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Roboto Slab";
+    src: url(../../../assets/fonts/RobotoSlab-Bold.woff2) format("woff2");
+    src: url(../../../assets/fonts/RobotoSlab-Bold.woff) format("woff");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Roboto Serif";
+    src: url(../../../assets/fonts/RobotoSerif-ExtraBold.woff2) format("woff2");
+    src: url(../../../assets/fonts/RobotoSerif-ExtraBold.woff) format("woff");
+    font-weight: 800;
+}
+
+//header font
+h1 {
+    font-size: 1.875rem;
+    font-family: "Roboto Serif";
+    font-weight: 800;
+    line-height: 1.75rem;
+    letter-spacing: -0.1rem;
+    word-spacing: -0.1rem;
+}
+
+// tagline font
+h2 {
+    font-weight: 600;
+    line-height: 1.75rem;
+}
+
+// form header font
+h3 {
+    font-weight: 1.125rem;
+    line-height: 1.3125rem;
+}
+
+p {
+    font-weight: 300;
+    line-height: 1.25rem;
+}
