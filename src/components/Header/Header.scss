@@ -5,6 +5,13 @@
 
 .header {
     padding: 1rem;
+    z-index: 20;
+    background-color: $main-background;;
+
+    &__home{
+        text-decoration: none;
+        width: 1rem;
+    }
 
     &__heading {
         color: $dark-text;
@@ -15,7 +22,6 @@
         position: absolute;
         top: 2.5rem;
         left: 4.5rem;
-        background-color: transparent;
         z-index: 30;
     }
 
