@@ -1,9 +1,8 @@
-import tomatoPlant from '../../assets/images/tomato-plant.json';
+import tomatoPlant from '../assets/images/tomato-plant.json';
 import { useLottie } from 'lottie-react';
 import { NavLink } from 'react-router-dom';
-import plantDad from '../../assets/images/plant-dad.svg';
-import bottomTriangle from '../../assets/images/landing-page-bottom-dark-blue.svg';
-import './ProductDetails.scss';
+import plantDad from '../assets/images/plant-dad.svg';
+import bottomTriangle from '../assets/images/landing-page-bottom-dark-blue.svg';
 
 export default function ProductDetails() {
 
@@ -20,12 +19,12 @@ export default function ProductDetails() {
       const { View } = useLottie(options, style);
 
     return(
-        <div>
+        <div className='details__background'>
             <div className='details'>
-                <p className='details__info'>Descripton about the app will go here and it will be very sassy! Think gay plant parent! We love to see it!</p>
+                <p className='details__info'>Are you a new gardener hoping to nurture a flourishing garden on your first go or a seasoned gardener looking for inspiration? Take our quiz to find out what plants will THRIVE in your backyard.</p>
                 {View}
                 <NavLink to="/quiz" className="details__quiz-link">Get Started</NavLink>
-                <img src={plantDad} alt="bearded man waters plants at his windowsill" />
+                <img className='details__image' src={plantDad} alt="bearded man waters plants at his windowsill" />
             </div>
             <img className='details__bottom' src={bottomTriangle} alt="this is a triangle" />
         </div>

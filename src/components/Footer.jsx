@@ -1,9 +1,8 @@
-import './Footer.scss';
 
 export default function Footer () {
     return (
         <div className="footer">
-        <p className="footer__info">Footer info goes here.</p>
+        <p className="footer__info">Congrats! You've made it all the way to the footer.</p>
         </div>
     )
 }

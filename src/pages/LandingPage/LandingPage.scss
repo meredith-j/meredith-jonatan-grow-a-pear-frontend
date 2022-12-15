@@ -1,0 +1,81 @@
+@use '../../assets/styles/partials/breakpoints' as *;
+@use '../../assets/styles/partials/colours' as *;
+@use '../../assets/styles/partials/fonts' as *;
+@use '../../assets/styles/partials/mixins' as *;
+
+.details {
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $dark-background;
+    margin: -11rem 0 0 0;
+
+    &__info {
+        padding: 20rem 3rem 1rem 3rem;
+        text-align: center;
+        color: $light-text;
+        background-color: transparent;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+    
+    &__quiz-link {
+        padding: 1rem;
+        margin: 0 0 1rem 0;
+        text-decoration: none;
+        font-size: 1.875rem;
+        background-color: $button-colour;
+        border-radius: 0.5rem;
+        color: $dark-text;
+        box-shadow: rgba(255,127,80, 0.1) 0px 0.5rem 1.5rem, rgba(255,127,80, 0.1) 0px 16px 56px, rgba(255,127,80, 0.1) 0px 1.5rem 5rem;
+
+        &:hover {
+            background: linear-gradient(117deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+            color: $light-text;
+        }
+    }
+
+    &__image {
+        background-color: transparent;
+    }
+
+    &__bottom {
+        margin: -0.75rem 0 0 0;
+        width: 100%;
+        background-color: transparent;
+        position: relative;
+        z-index: -5;
+    }
+}
+
+.tagline {
+    display: flex;
+    padding: 3rem 2rem 0 2rem;
+    justify-content: space-between;
+    z-index: 0;
+    background: $main-background;
+    position: relative;
+    height: 17rem;
+    width: 100%;
+
+    &__image{
+        background-color: transparent;
+        position: relative;
+        min-height: 22rem;
+        z-index: 20;
+    }
+
+    &__heading {
+        width: 55%;
+        padding: 6.5rem 1rem 0 0;
+        text-align: right;
+        background-color: transparent;
+    }
+
+    &__bottom {
+        margin: -2rem 0 0 0;
+        width: 100%;
+        background-color: transparent;
+        }
+}
