@@ -1,17 +1,19 @@
+import PlantContext from "../utils/PlantContext";
+import { useContext } from "react";
 
-export default function PlantOptions(plants, setPlants) {
+export default function PlantOptions() {
 
-    if (!plants) {
-        return(
+
+    const {allPlants} = useContext(PlantContext)
+
+    return (
+        allPlants.map((plant) => {
+            console.log("plant", plant) 
+            return(
             <>
-            <h1>Loading</h1>
+            <h1 key={plant.plant_id}>{ plant.name }</h1>
             </>
-        )
-    }
-    console.log(plants)
-    return(
-        <>
-        <h1>wootwoot</h1>
-        </>
+            )
+        })  
     )
 }

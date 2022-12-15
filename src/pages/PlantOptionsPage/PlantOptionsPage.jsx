@@ -1,9 +1,15 @@
+import PlantOptions from "../../components/PlantOptions";
+import PlantList from "../../components/PlantList";
 
-export default function PlantOptionsPage(plants, setPlants) {
+export default function PlantOptionsPage() {
 
-    console.log(plants, setPlants)
+
+
     return(
         <>
+        <PlantOptions />
+        <PlantList />
         </>
     )
+
 }
