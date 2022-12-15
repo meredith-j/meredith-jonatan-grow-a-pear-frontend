@@ -6,20 +6,13 @@ import FormPage from './pages/FormPage/FormPage';
 import PlantOptionsPage from './pages/PlantOptionsPage/PlantOptionsPage'
 import Footer from './components/Footer';
 import './App.scss';
-import CreateContext from './utils/CreateContext'
+import { PlantProvider } from "./utils/PlantContext";
 
 export default function App(){
 
-  constructor(props); {
-
-    this.state = {
-      CreateContext: ""
-    }
-  }
-
   return(
     <>
-    <PlantList.Provider value={CreateContext}>
+    <PlantProvider>
       <BrowserRouter>
         <Header />
         <Routes>
@@ -30,7 +23,7 @@ export default function App(){
         </Routes>
         <Footer />
       </BrowserRouter>
-    </PlantList.Provider>
+    </PlantProvider>
     </>
   )
 }

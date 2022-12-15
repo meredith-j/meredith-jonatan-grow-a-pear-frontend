@@ -2,11 +2,11 @@ import LocationQuestion from "../../components/LocationQuestion"
 import SunlightQuestion from "../../components/SunlightQuestion";
 import ComfortLevelQuestion from '../../components/ComfortLevelQuestion'
 import './FormPage.scss';
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { motion } from "framer-motion";
 import axios from "axios";
-import { Link, Navigate, useNavigate } from "react-router-dom";
-import PlantOptions from "../../components/PlantOptions";
+import {useNavigate } from "react-router-dom";
+import PlantContext from "../../utils/PlantContext";
 
 export default function FormPage() {
 
@@ -16,9 +16,9 @@ export default function FormPage() {
     const [province, setProvince] = useState()
     const [sunlight, setSunlight] = useState()
     const [level, setLevel] = useState()
-    const [plants, setPlants] = useState()
 
     const navigate = useNavigate()
+    const {generatePlants} = useContext(PlantContext)
     
     const [x, setX] = useState(0);
 
@@ -28,7 +28,7 @@ export default function FormPage() {
         axios
             .post(`http://localhost:8080/plant`, {city:city, province:province, sunlight:sunlight, level:level})
             .then((resp) => {
-                setPlants(resp.data)
+                generatePlants(resp.data)
                 navigate("/plants")
             })
             .catch((err) => {
@@ -64,10 +64,6 @@ export default function FormPage() {
             x={x}
             setX={setX}
             handleSubmit={handleSubmit}
-        />,
-        <PlantOptions 
-            plants={plants}
-            setPlants={setPlants}
         />
       ];
 
