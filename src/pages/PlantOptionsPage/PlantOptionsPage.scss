@@ -1,0 +1,60 @@
+@use '../../assets/styles/partials/breakpoints' as *;
+@use '../../assets/styles/partials/colours' as *;
+@use '../../assets/styles/partials/fonts' as *;
+@use '../../assets/styles/partials/mixins' as *;
+
+.plant {
+    background-color: $main-background;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2rem 1rem;
+    justify-content: center;
+    width: 100%;
+
+    &__article {
+        display: flex;
+        width: 30%;
+        flex-direction: column;
+        background-color: $dark-background;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    &__buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0.1rem 0 0 0;
+    }
+
+    &__info {
+        color: $dark-text;
+        background-color: $button-colour;
+        border: none;
+        width: 49%;
+
+        &--details {
+            display: none;
+
+            @include tablet {
+                display: inline;
+            }
+        }
+    }
+    
+    &__select {
+        color: $dark-text;
+        background-color: $button-colour;
+        border: none;
+        width: 49%;
+
+        &--details {
+            display: none;
+
+            @include tablet {
+                display: inline;
+            }
+        }
+    }
+}
