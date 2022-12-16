@@ -24,17 +24,16 @@ The most important design feature is to make sure that the content on Grow a Pea
 -	MySQL
 -	Lottie-React Library (for animations)
 -	Plotly.js Library (for the purposes of creating a map with plant hardiness zone data)
--	JWT Auth (for the purposes of finishing a demo version, the website will already be logged into. As a diving deeper, I will work on account creation.)
-- Geoapify API (generate GPS coordinates for user’s city so that the coordinates can be sent to Plotly.js map, which will confirm which plant hardiness zone users live in)
+- Google Maps Geocoding API
 
-🌱 Site Map
+🌱 Final Product
 
-<img width="468" alt="image" src="https://user-images.githubusercontent.com/112671806/205553313-64e47908-b07f-41fc-918c-4232ba94468c.png">
-<img width="468" alt="image" src="https://user-images.githubusercontent.com/112671806/205553329-28010087-cb0b-4dd3-84b1-bb3f0c1ea911.png">
+![landing page (1)](https://user-images.githubusercontent.com/112671806/208164011-d35c3bbc-c64b-4ffd-b5e1-718623a3eea4.jpg)
+![Frame 1](https://user-images.githubusercontent.com/112671806/208164029-c8d4c0c5-9a50-469a-baa7-f039a3212b08.jpg)
 
-🌱 Colour Inspo
-<img width="1491" alt="colour inspo" src="https://user-images.githubusercontent.com/112671806/205553557-8ea9acd3-95b9-453e-bd89-a21f26ad8986.png">
+🌱 How to Run
 
+- in terminal: npm i
 
 🌱 Server Side Implementation
 --> See my backend Github folder for more information! https://github.com/meredith-j/meredith-jonatan-grow-a-pear-backend
