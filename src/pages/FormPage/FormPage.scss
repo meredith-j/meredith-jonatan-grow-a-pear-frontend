@@ -8,6 +8,7 @@
     padding: 0 1rem 1rem 1rem;
     position: relative;
     z-index: 19;
+    min-height: 90vh;
 
     &__border {
         background-color: $form-box-colour;

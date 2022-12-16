@@ -53,6 +53,11 @@
     width: 100%;
     height: 40rem;
 
+    @include tablet{
+        margin: 0;
+        height: 10rem;
+    }
+
     &__info {
         text-align: center;
         font-size: 0.75rem;
