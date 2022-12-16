@@ -1,6 +1,5 @@
 import PlantContext from "../utils/PlantContext";
 import { useContext } from "react";
-import plantImage from '../assets/images/raspberry-encore.jpeg'
 
 export default function PlantOptions({addPlant}) {
 

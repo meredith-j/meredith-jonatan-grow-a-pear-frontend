@@ -1,4 +1,3 @@
-import plantImage from '../assets/images/raspberry-encore.jpeg'
 
 export default function PlantList ({plants}) {
 

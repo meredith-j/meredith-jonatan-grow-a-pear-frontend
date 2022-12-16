@@ -1,6 +1,6 @@
 import logo from '../assets/images/GAP-logo.svg';
 import profileIcon from '../assets/icons/profile-icon.svg'
-import { NavLink, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
 
@@ -11,7 +11,7 @@ export default function Header() {
                 <h1 className="header__heading">Pear</h1>
                 <img className="header__logo" src={logo} alt="a cute green pear winking at you" />
             </Link>
-            <NavLink to={"/profile"}><img className="header__profile-icon" alt="go to your profile" src={profileIcon}/></NavLink>
+            <img className="header__profile-icon" alt="go to your profile" src={profileIcon}/>
         </div>
     )
 }
