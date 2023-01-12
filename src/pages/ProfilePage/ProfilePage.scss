@@ -2,3 +2,12 @@
 @use '../../assets/styles/partials/colours' as *;
 @use '../../assets/styles/partials/fonts' as *;
 @use '../../assets/styles/partials/mixins' as *;
+
+.profile {
+    background-color: $main-background;
+    padding: 2rem 0 0 0;
+
+    &__heading {
+        text-align: center;
+    }
+}
