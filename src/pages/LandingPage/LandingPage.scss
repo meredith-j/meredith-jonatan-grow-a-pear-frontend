@@ -89,9 +89,9 @@
         padding: 1rem;
         width: 95%;
         margin: auto;
-        display: flex;
-        flex-direction: row-reverse;
         align-items: center;
+        display: flex;
+        flex-direction: column;
         justify-content: space-around;
     }
 
@@ -103,6 +103,11 @@
         padding: 1rem;
         width: 95%;
         margin: auto;
+        text-align: center;
+    }
+
+    &__tablet-image {
+        height: 15rem;
     }
 }
 

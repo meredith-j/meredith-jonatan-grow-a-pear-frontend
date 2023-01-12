@@ -1,10 +1,18 @@
 import PlantContext from "../utils/PlantContext";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 
 export default function PlantOptions({addPlant}) {
 
 
     const {allPlants} = useContext(PlantContext)
+    
+    const [showModal, setShowModal] = useState(false);
+    const [selectedItem, setSelectedItem] = useState({});
+  
+    const handleModal = (plant) => {
+    setSelectedItem(plant);
+    setShowModal(true);
+  }
 
     return (
         <div className="plant">
@@ -17,8 +25,14 @@ export default function PlantOptions({addPlant}) {
                                 <h5 className="plant__name">{ plant.name }</h5>
                                 <img src={plant.image} alt={plant.name} className="plant__image" />
                                 <div className="plant__buttons">
-                                    <button className="plant__info"><span className="plant__info--details">More Info</span>?</button>
+                                    <button onClick={() => handleModal(plant)} className="plant__info"><span className="plant__info--details">More Info</span>?</button>
                                     <button className="plant__select" onClick={() => addPlant(plant)}>+ <span className="plant__select--details" >Add to list</span></button>
+                                        {showModal && selectedItem.id === plant.id && (
+                                            <div className="modal">
+                                            <p>{plant.info}</p>
+                                            <button onClick={() => setShowModal(false)}>Close</button>
+                                            </div>
+                                        )}
                                 </div>
                             </div>
                         )
@@ -27,5 +41,3 @@ export default function PlantOptions({addPlant}) {
         </div>
     )
 }
-
-// 
