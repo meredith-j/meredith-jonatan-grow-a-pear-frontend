@@ -3,6 +3,7 @@ import Header from './components/Header';
 import LandingPage from './pages/LandingPage/LandingPage';
 import FormPage from './pages/FormPage/FormPage';
 import PlantOptionsPage from './pages/PlantOptionsPage/PlantOptionsPage'
+import ProfilePage from "./pages/ProfilePage/ProfilePage";
 import Footer from './components/Footer';
 import './App.scss';
 import { PlantProvider } from "./utils/PlantContext";
@@ -18,6 +19,7 @@ export default function App(){
           <Route path="/" element={<LandingPage />} />
           <Route path="/quiz" element={<FormPage />} />
           <Route path="/plants" element={<PlantOptionsPage />} />
+          <Route path="/profile" element={<ProfilePage />} />
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -14,13 +14,13 @@
     z-index: 20;
     background-color: $main-background;
 
+    &__heading {
+        color: $dark-text;
+    }
+    
     &__home{
         text-decoration: none;
         width: 1rem;
-    }
-
-    &__heading {
-        color: $dark-text;
     }
 
     &__logo {
@@ -30,6 +30,10 @@
         left: 4.5rem;
         background-color: transparent;
         z-index: 30;
+    }
+
+    &__profile {
+        width: 10rem;
     }
 
     &__profile-icon {
