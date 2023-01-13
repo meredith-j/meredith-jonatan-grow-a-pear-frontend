@@ -2,11 +2,7 @@ import { motion } from "framer-motion";
 
 export default function ComfortLevelQuestion({level, setLevel, x, setX}) {
     return(
-        <motion.div
-            initial={{ x: 600 }}
-            transition={{ duration: 1 }}
-            animate={{ x: 0 }}
-        >
+        <div>
         <h3 className="form__header">How comfortable are you with gardening?</h3>
         <div className="comfort">
             <div className="comfort__input">
@@ -54,6 +50,6 @@ export default function ComfortLevelQuestion({level, setLevel, x, setX}) {
         >
             Finish
         </button>
-    </motion.div>
+    </div>
     )
 }

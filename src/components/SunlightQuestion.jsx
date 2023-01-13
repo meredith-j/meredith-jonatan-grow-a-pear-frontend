@@ -2,11 +2,7 @@ import { motion } from "framer-motion";
 
 export default function SunlightQuestion ({page, setPage, sunlight, setSunlight, x, setX}) {
     return(
-        <motion.div
-            initial={{ x: x }}
-            transition={{ duration: 1 }}
-            animate={{ x: 0 }}
-        >
+        <div>
             <h3 className="form__header">How much direct sunlight do you get in your garden?</h3>
             <p className="form__info">Direct sunlight refers to how often the sun is directly hitting your plants.</p>
             <div className="sunlight__input">
@@ -83,6 +79,6 @@ export default function SunlightQuestion ({page, setPage, sunlight, setSunlight,
                     setX(0);
             }}>
             Next</button>
-        </motion.div>
+        </div>
     )
 }

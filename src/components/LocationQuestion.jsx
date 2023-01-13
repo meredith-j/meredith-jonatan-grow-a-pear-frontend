@@ -3,11 +3,7 @@ import { motion } from "framer-motion";
 export default function LocationQuestion ({page, setPage, city, setCity, province, setProvince, formData, setFormData, x, setX}) {
 
     return(
-        <motion.div
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5 }}
-        >
+        <div>
             <h3 className="form__header">Please enter your location details below.</h3>
             <div className="location__inputs">
                 <label className="form__label">City</label>
@@ -35,6 +31,6 @@ export default function LocationQuestion ({page, setPage, city, setCity, provinc
                     }}>
                 Next
             </button>
-        </motion.div>
+        </div>
     )
 }

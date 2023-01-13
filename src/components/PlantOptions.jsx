@@ -19,7 +19,6 @@ export default function PlantOptions({addPlant}) {
             <h2 className="plant__header">Plants for you!</h2>
                 <div className="plant__list">
                     {allPlants.map((plant) => {
-                        console.log(plant)
                         return (
                             <div key={plant.plant_id} className="plant__article">
                                 <h5 className="plant__name">{ plant.name }</h5>

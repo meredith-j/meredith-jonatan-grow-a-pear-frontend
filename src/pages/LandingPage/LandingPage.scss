@@ -2,6 +2,7 @@
 @use '../../assets/styles/partials/colours' as *;
 @use '../../assets/styles/partials/fonts' as *;
 @use '../../assets/styles/partials/mixins' as *;
+@use '../../assets/styles/partials/animations' as *;
 
 .details {
     z-index: 10;
@@ -82,8 +83,12 @@
 
 .tagline__tablet {
    
+    &-background {
+        background: $gradient;
+        animation: move-gradient 5s linear infinite;
+    }
+
     &-box{
-        background: linear-gradient(117deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
         color: $light-text;   
         border-radius: 1rem;
         padding: 1rem;

@@ -72,13 +72,9 @@ export default function FormPage() {
             <form className="form__border"
                 onSubmit={handleSubmit}
             >
-            <motion.div 
-                initial={{ x: x }}
-                transition={{ duration: 1 }}
-                animate={{ x: 0 }}
-            >    
+            <div>    
                 {componentList[page]}
-            </motion.div >
+            </div >
                 </form>
         </div>
     )
